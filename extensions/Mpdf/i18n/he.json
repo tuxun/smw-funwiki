@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"mpdf-action": "יצוא PDF",
+	"mpdf-desc": "המרת הדף הנוכחי ל־PDF ושליחתו לדפדפן"
+}

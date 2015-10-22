@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"whosonline": "Kdo je na strani",
+	"whosonline-desc": "Prikaže [[Special:WhosOnline|seznam]] prijavljenih in brezimnih uporabnikov, ki so trenutno na strani"
+}

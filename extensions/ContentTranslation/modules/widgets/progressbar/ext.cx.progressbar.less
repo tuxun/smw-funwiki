@@ -1,0 +1,44 @@
+@import "../common/ext.cx.common";
+
+.cx-header__progressbar {
+	.mw-ui-one-whole;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.cx-progressbar {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	height: 4px;
+	background: #ddd;
+	vertical-align: middle;
+	padding: 0;
+}
+
+.cx-progressbar__bar {
+	background: #3892E3;
+	display: block;
+	height: 4px;
+	left: 0;
+	transition: width 1s;
+}
+
+.cx-progressbar__bar--mt {
+	display: block;
+	height: 4px;
+	left: 0;
+	transition: width 1s;
+	background: #555;
+	position: relative;
+	top: -4px;
+	opacity: 0.5;
+}
+
+.cx-progressbar__info {
+	background-color: #eee;
+}
+
+.cx-progressbar__info--mt {
+	font-size: small;
+}

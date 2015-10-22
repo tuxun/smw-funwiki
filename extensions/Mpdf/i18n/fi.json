@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nedergard"
+		]
+	},
+	"mpdf-action": "PDF-vienti",
+	"mpdf-desc": "Muuntaa nykyisen sivun PDF:ksi ja lähettää sen selaimelle"
+}

@@ -1,0 +1,134 @@
+@import "../../widgets/common/ext.cx.common";
+@import "mediawiki.mixins";
+
+.cx-header {
+	transition: width 0.15s;
+}
+
+.cx-header__logo {
+	.mw-ui-item;
+	width: 42px;
+	height: 38px;
+	margin: 0 10px 0 0;
+	.background-image-svg('../images/W_gray.svg', '../images/W_gray.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 28px;
+	border-right: 1px solid #ddd;
+	display: block;
+}
+
+.cx-header__title {
+	.mw-ui-item;
+	.mw-ui-two-fifths;
+	padding: 0;
+	font-size: 18px;
+	color: #777;
+}
+
+.cx-header__title-text {
+	display: inline-block;
+	padding-top: 8px;
+}
+
+
+.cx-header__bar {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	box-shadow: 0 4px rgba(0,0,0,0.05);
+}
+
+.cx-header__translation-center {
+	.mw-ui-item;
+	.mw-ui-one-third;
+
+	a {
+		color: #565656;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			border: 4px solid transparent;
+			border-right-color: #555;
+			margin: 0 8px 0 0;
+		}
+	}
+}
+
+.cx-header__save-status {
+	.mw-ui-item;
+	.mw-ui-one-third;
+	color: #555555;
+	font-size: normal;
+}
+
+.cx-header__infobar {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: 10px;
+
+	&.cx-error {
+		background-color: #F7D358;
+	}
+
+	&.cx-success {
+		border: 1px solid #00af89;
+		background-color: #fff;
+	}
+
+	border-bottom: 1px solid #ddd;
+	font-size: large;
+
+	.remove {
+		@vertical-margin: 10px;
+		@horizontal-margin: 15px;
+		float: right;
+		padding: @vertical-margin @horizontal-margin;
+
+		.background-image-svg('../images/clear.svg', '../images/clear.png');
+		background-attachment: scroll;
+		background-position: 10px center;
+		background-repeat: no-repeat;
+		background-size: 15px;
+		cursor: pointer;
+		clear: both;
+	}
+}
+
+.cx-header__publish {
+	.mw-ui-item;
+	.mw-ui-one-third;
+	float: right;
+}
+
+.cx-header.sticky {
+	.mw-ui-two-thirds;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	background: rgba(255,255,255,0.95);
+	padding-top: 5px;
+	padding: 5px 0 0 0;
+	z-index: 10;
+
+	.cx-header__bar {
+		border: none;
+		margin: 0;
+		padding-top: 5px;
+	}
+
+	.cx-header__publish-button {
+		float: right;
+	}
+
+	.cx-header__logo,
+	.cx-header__user-details,
+	.cx-header__title {
+		display: none;
+	}
+}

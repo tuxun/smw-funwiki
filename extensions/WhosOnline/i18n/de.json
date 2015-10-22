@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"MF-Warburg"
+		]
+	},
+	"whosonline": "Wer ist gerade online",
+	"whosonline-desc": "Ermöglicht eine [[Special:WhosOnline|Spezialseite]] zur Anzeige der gerade angemeldeten sowie anonymen Benutzer des Wikis"
+}

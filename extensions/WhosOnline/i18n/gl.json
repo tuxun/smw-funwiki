@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Alma",
+			"Toliño"
+		]
+	},
+	"whosonline": "Quen está conectado",
+	"whosonline-desc": "Amosa [[Special:WhosOnline|unha lista]] dos usuarios rexistrados e anónimos que están actualmente en liña"
+}

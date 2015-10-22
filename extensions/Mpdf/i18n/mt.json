@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"mpdf-action": "Esportazzjoni bil-PDF",
+	"mpdf-desc": "Jikkonverti l-paġna attwali f'PDF u jibgħatha għall-browżer"
+}

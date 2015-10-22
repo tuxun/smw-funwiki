@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Martin Schwindl <martin.schwindl@ratin.de>",
+			"Metalhead64"
+		]
+	},
+	"msu-desc": "Ermöglicht einfache Uploads für eine oder mehrere Dateien gleichzeitig",
+	"msu-button-title": "Datei(en) auswählen",
+	"msu-insert-link": "als Link einfügen",
+	"msu-insert-gallery": "Alle als Gallerie einfügen",
+	"msu-insert-files": "Alle als Bild einfügen",
+	"msu-insert-links": "Alle als Link einfügen",
+	"msu-insert-picture": "als Bild einfügen",
+	"msu-insert-movie": "als Film einfügen",
+	"msu-cancel-upload": "Upload abbrechen",
+	"msu-clean-all": "Liste leeren",
+	"msu-upload-possible": "Datei kann hochgeladen werden",
+	"msu-ext-not-allowed": "Es {{PLURAL:$1|ist nur folgender Dateityp|sind nur folgende Dateitypen}} erlaubt:",
+	"msu-upload-this": "Diese Datei hochladen",
+	"msu-upload-all": "Alle Dateien hochladen",
+	"msu-dropzone": "Datei(en) hier ablegen",
+	"msu-comment": "Datei hochgeladen mit MsUpload"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maciej Brencz"
+		]
+	},
+	"whosonline": "Who's online",
+	"whosonline-desc": "Displays [[Special:WhosOnline|a list]] of logged-in and anonymous users currently online"
+}

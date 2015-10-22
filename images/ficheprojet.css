@@ -1,0 +1,91 @@
+#titrefiche{}
+
+#minilogo{}
+
+
+
+.rounded{border:5px solid orange;
+border-radius:2em; }
+
+
+#firstdiv{
+padding-top:10%;padding-bottom:10%;
+/*border-image:url('head.png') 250 250 250 250 / 250px 250px 250px 250px  stretch stretch;;*/
+/*background-image:url('zhead.png');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    background-position: top;*/
+border-bottom:0;
+height:75%;
+}
+
+
+#lastdiv{
+border-top:0;
+height:25%;/*
+background-image:url('zbottom.png') 
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;;
+border-image:url('bottom.png') 80 80 80 80 / 80px 80px 80px 80px   stretch stretch;;*/
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+background-image:url('page.png');
+   background-repeat: no-repeat;
+   
+    background-position: center center;
+}
+.subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 256mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+ html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+
+.rgt{float:right}
+.lft{
+/*float:left*/
+}

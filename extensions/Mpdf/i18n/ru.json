@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pastakhov"
+		]
+	},
+	"mpdf-action": "Экспорт в PDF",
+	"mpdf-desc": "Преобразует текущую страницу в PDF и отправляет браузеру"
+}

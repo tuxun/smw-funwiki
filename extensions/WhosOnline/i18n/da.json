@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tomas Jensen"
+		]
+	},
+	"whosonline": "Hvem er på",
+	"whosonline-desc": "Viser [[Special:WhosOnline|en liste]] af, både anonyme og kendte bruger der er logget på"
+}

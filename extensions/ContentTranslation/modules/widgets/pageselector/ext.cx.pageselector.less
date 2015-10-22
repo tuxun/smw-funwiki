@@ -1,0 +1,53 @@
+@import "mediawiki.mixins";
+
+.mw-pageselector-menu {
+	position: absolute;
+	border: 1px solid #ccc;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	list-style: none;
+	margin: 30px 0;
+	color: black;
+	background-color: white;
+	// Show it on top of others
+	z-index: 9999;
+	max-width: 30%;
+	max-height: 300px;
+	overflow-y: auto;
+
+	&> li {
+		border-bottom: 1px solid #eee;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 50px 50px;
+		padding: 5px 5px 5px 60px;
+		min-height: 40px;
+		.background-image-svg('page-placeholder.svg', 'page-placeholder.png');
+	}
+
+	li.mw-pageselector-selected {
+		cursor: pointer;
+		background-color: darken( white, 10% );
+	}
+
+	.mw-page-title {
+		font-size: 1em;
+	}
+
+	li.mw-page-missing {
+		.background-image-svg('../../tools/images/question-mark.svg', '../../tools/images/question-mark.png');
+		background-repeat: no-repeat;
+		background-color: #fbfbfb;
+		background-position: top left;
+		border-right: 1px solid #eee;
+
+		.mw-page-title {
+			color: red;
+		}
+	}
+
+	.mw-page-description {
+		font-size: 0.8em;
+		line-height: 1em;
+		color: #555;
+	}
+}

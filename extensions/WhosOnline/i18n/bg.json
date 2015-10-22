@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"DCLXVI"
+		]
+	},
+	"whosonline": "Кой е на линия",
+	"whosonline-desc": "Показва [[Special:WhosOnline|списък]] с анонимни потребители и влезли потребители, които са на линия"
+}

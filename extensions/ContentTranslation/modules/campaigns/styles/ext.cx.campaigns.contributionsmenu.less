@@ -1,0 +1,65 @@
+@import "mediawiki.mixins";
+
+.cx-campaign-contributionsmenu {
+	padding: 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		padding: 5px 10px 5px 40px;
+		margin: 0;
+		border-bottom: 1px solid #ccc;
+		min-width: 200px;
+		background-size: 24px;
+		background-position: left 10px center;
+		background-repeat: no-repeat;
+
+		a {
+			text-decoration: none;
+			color: #565656;
+			display: block;
+		}
+
+		&:hover {
+			background-color: #eee;
+		}
+
+		&.cx-campaign-contributions {
+			.background-image-svg('../images/userAvatar.svg', '../images/userAvatar.png');
+		}
+
+		&.cx-campaign-uploads {
+			.background-image-svg('../images/wikimediaCommons.svg', '../images/wikimediaCommons.png');
+		}
+
+		&.cx-campaign-translations {
+			.background-image-svg('../images/translation.svg', '../images/translation.png');
+		}
+
+		&.cx-campaign-new-beta-feature a {
+			.background-image-svg('../images/blue-beta.svg', '../images/blue-beta.png');
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 24px;
+		}
+
+		.cx-campaign-contributionsmenu__expansion {
+			background-size: 24px;
+			background-position: left 10px center;
+			background-repeat: no-repeat;
+			.background-image-svg('../images/question.svg', '../images/question.png');
+
+			margin: 2px 5px 0 0;
+			padding: 5px 5px 5px 40px;
+			color: #555;
+			background-color: #ecf5ff;
+			height: 2em;
+			line-height: 2em;
+			font-size: small;
+		}
+	}
+}

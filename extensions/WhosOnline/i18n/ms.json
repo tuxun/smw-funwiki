@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zamwan"
+		]
+	},
+	"whosonline": "Siapa di talian",
+	"whosonline-desc": "Paparkan [[Special:WhosOnline|senarai]] para pengguna log masuk dan tanpa nama yang berada di talian"
+}

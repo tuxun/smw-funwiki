@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"John Reid"
+		]
+	},
+	"cx": "Owerset page",
+	"cx-desc": "Ae tuill that permits eeditors tae owerset pages fae yin leid intil anither wi the heelp o machine owersetin n ither owersetin tuils",
+	"cx-header-progressbar-text": "$1% owerset",
+	"cx-header-translation-center": "Owersetin center",
+	"cx-source-view-page": "see page",
+	"cx-publish-page-success": "Page publeeshed at $1",
+	"cx-publish-page-error": "Mistak while hainin page.",
+	"cx-publish-button": "Publeesh owerset",
+	"cx-publish-summary": "Cræftit bi owersetin the page \"$1\"",
+	"tag-contenttranslation": "ContentOwerset",
+	"cx-source-loading": "Laidin $1",
+	"cx-special-login-error": "Ye maun be loggit in fer tae owerset in this page. [$1 Login]",
+	"cx-tools-instructions-text1": "{{GENDER:|Eik}} paragraphs tae owerset",
+	"cx-tools-instructions-text2": "{{GENDER:|Ye}} dinna need tae eik thaim aw",
+	"cx-tools-instructions-text3": "{{GENDER:|Mak}} tex read natural",
+	"cx-tools-instructions-text4": "Machine owersetin is uisefu but {{GENDER:|ye'l}} need tae clean up some mistaks tae mak it juIst richt.",
+	"cx-tools-instructions-text5": "{{GENDER:|Publish}} the owerset",
+	"cx-tools-instructions-text6": "Whan {{GENDER:|ye}}'r happie wi the ootcome, press \"{{int:cx-publish-button}}\".",
+	"cx-tools-searchbox-text": "Rake fer ae waird",
+	"cx-tools-view-guidelines": "{{GENDER:|See}} the owersetin guidelines"
+}

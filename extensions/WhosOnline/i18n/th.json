@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Harley Hartwell",
+			"Passawuth"
+		]
+	},
+	"whosonline": "ผู้ที่กำลังออนไลน์",
+	"whosonline-desc": "แสดง[[Special:WhosOnline|รายชื่อ]]ของผู้ใช้ที่ล็อกอินและผู้ใช้นิรนาม ที่กำลังออนไลน์อยู่บนวิกินี้"
+}

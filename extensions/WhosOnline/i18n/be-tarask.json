@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"EugeneZelenko",
+			"Jim-by",
+			"Red Winged Duck"
+		]
+	},
+	"whosonline": "Хто он-лайн",
+	"whosonline-desc": "Паказвае [[Special:WhosOnline|сьпіс]] увайшоўшых і ананімных удзельнікаў, якія знаходзяцца он-лайн"
+}

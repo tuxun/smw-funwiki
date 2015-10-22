@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lejonel"
+		]
+	},
+	"whosonline": "Vem är ansluten",
+	"whosonline-desc": "Visar [[Special:WhosOnline|en lista]] över inloggade och anonyma användare som för närvarande är anslutna"
+}

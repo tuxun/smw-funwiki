@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"whosonline": "Qui es in linea",
+	"whosonline-desc": "Monstra [[Special:WhosOnline|un lista]] de usatores authenticate e anonyme actualmente in linea"
+}

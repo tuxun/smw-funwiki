@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Garas",
+			"Vpovilaitis",
+			"Albertas"
+		]
+	},
+	"timeline-desc": "Sukuria laiko grafikus naudojant gairę <code>&lt;timeline&gt;</code>",
+	"timeline-invalidmap": "EasyTimeline sugeneravo netinkamą paveikslėlio atvaizdį"
+}

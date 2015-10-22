@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dani"
+		]
+	},
+	"whosonline": "Online felhasználók",
+	"whosonline-desc": "[[Special:WhosOnline|Lista]] a jelenlévő bejelentkezett és névtelen szerkesztőkről"
+}

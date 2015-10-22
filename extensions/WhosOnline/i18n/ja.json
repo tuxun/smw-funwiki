@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fryed-peach"
+		]
+	},
+	"whosonline": "オンラインの利用者",
+	"whosonline-desc": "現在オンライン状態にある登録利用者および匿名利用者の[[Special:WhosOnline|一覧]]を表示する"
+}

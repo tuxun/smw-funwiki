@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bennylin"
+		]
+	},
+	"whosonline": "Siapa yang daring",
+	"whosonline-desc": "Menampilkan [[Special:WhosOnline|daftar]] pengguna, baik yang yang saat ini telah masuk log maupun yang anonim yang berada dalam jaringan (sedang terhubung)"
+}

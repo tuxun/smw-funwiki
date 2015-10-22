@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toniher"
+		]
+	},
+	"voteny-desc": "Votació basada en JavaScript amb l'etiqueta <tt>&lt;vote&gt;</tt>",
+	"voteny-link": "Vota",
+	"voteny-unvote-link": "anul·la el vot",
+	"voteny-community-score": "puntuació comunitària: $1",
+	"voteny-ratings": "{{PLURAL:$1|una valoració|$1 valoracions}}",
+	"voteny-remove": "anul·la",
+	"voteny-gave-this": "vau donar-li un $1",
+	"voteny-votes": "{{PLURAL:$1|un vot|$1 vots}}",
+	"topratings": "Pàgines més valorades",
+	"topratings-no-pages": "No hi ha cap pàgina valorada.",
+	"right-voteny": "Pàgines de votació"
+}

@@ -1,0 +1,8 @@
+.svn
+*~
+*.kate-swp
+.*.swp
+.idea
+core
+core.zip
+node_modules/

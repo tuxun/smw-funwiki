@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"mpdf-action": "PDF-Export",
+	"mpdf-desc": "Wandelt déi aktuell Säit an e PDF ëm a schéckt et op de Browser"
+}

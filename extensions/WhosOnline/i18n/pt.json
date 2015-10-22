@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Malafaya"
+		]
+	},
+	"whosonline": "Quem está ligado",
+	"whosonline-desc": "Apresenta [[Special:WhosOnline|uma lista]] de utilizadores autenticados e anónimos que se encontram ligados neste momento"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"whosonline": "Sino ba ang nasa internet",
+	"whosonline-desc": "Nagpapakita ng [[Special:WhosOnline|isang talaan]] ng nakatala at hindi nagpapakilalang mga tagagamit na kasalukuyang nasa internet"
+}

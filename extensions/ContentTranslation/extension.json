@@ -1,0 +1,950 @@
+{
+	"name": "ContentTranslation",
+	"version": "1.0.0+20150710",
+	"author": [
+		"Amir Aharoni",
+		"David Chan",
+		"Kartik Mistry",
+		"Joel Sahleen",
+		"Niklas Laxström",
+		"Pau Giner",
+		"Runa Bhattacharjee",
+		"Santhosh Thottingal",
+		"Siebrand Mazeland",
+		"Sucheta Ghoshal"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:ContentTranslation",
+	"descriptionmsg": "cx-desc",
+	"license-name": "GPL-2.0+",
+	"type": "specialpage",
+	"ExtensionMessagesFiles": {
+		"ContentTranslationAliases": "ContentTranslation.alias.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "ContentTranslationHooks::addModules",
+		"GetBetaFeaturePreferences": "ContentTranslationHooks::getPreferences",
+		"ResourceLoaderGetConfigVars": "ContentTranslationHooks::addConfig",
+		"EventLoggingRegisterSchemas": "ContentTranslationHooks::addEventLogging",
+		"SpecialContributionsBeforeMainOutput": "ContentTranslationHooks::addNewContributionButton",
+		"ResourceLoaderTestModules": "ContentTranslationHooks::onResourceLoaderTestModules",
+		"ListDefinedTags": "ContentTranslationHooks::registerTags",
+		"ChangeTagsListActive": "ContentTranslationHooks::registerTags",
+		"UserSaveOptions": "ContentTranslationHooks::onSaveOptions",
+		"EditPage::showEditForm:initial": "ContentTranslationHooks::newArticleCampaign",
+		"BeforeCreateEchoEvent": "ContentTranslationHooks::onBeforeCreateEchoEvent",
+		"EchoGetDefaultNotifiedUsers": "ContentTranslationHooks::onEchoGetDefaultNotifiedUsers"
+	},
+	"APIModules": {
+		"cxpublish": "ApiContentTranslationPublish",
+		"cxdelete": "ApiContentTranslationDelete",
+		"cxconfiguration": "ApiContentTranslationConfiguration",
+		"cxtoken": "ApiContentTranslationToken"
+	},
+	"APIListModules": {
+		"contenttranslation": "ApiQueryContentTranslation",
+		"contenttranslationsuggestions": "ApiQueryContentTranslationSuggestions",
+		"contenttranslationstats": "ApiQueryContentTranslationStats",
+		"contenttranslationlangtrend": "ApiQueryContentTranslationLanguageTrend",
+		"cxpublishedtranslations": "ApiQueryPublishedTranslations"
+	},
+	"MessagesDirs": {
+		"ContentTranslation": "i18n",
+		"ContentTranslationApi": "i18n/api"
+	},
+	"SpecialPages": {
+		"ContentTranslation": "SpecialContentTranslation",
+		"ContentTranslationStats": "SpecialContentTranslationStats"
+	},
+	"AutoloadClasses": {
+		"ApiContentTranslationConfiguration": "api/ApiContentTranslationConfiguration.php",
+		"ApiContentTranslationDelete": "api/ApiContentTranslationDelete.php",
+		"ApiContentTranslationPublish": "api/ApiContentTranslationPublish.php",
+		"ApiContentTranslationToken": "api/ApiContentTranslationToken.php",
+		"ApiQueryContentTranslation": "api/ApiQueryContentTranslation.php",
+		"ApiQueryContentTranslationSuggestions": "api/ApiQueryContentTranslationSuggestions.php",
+		"ApiQueryContentTranslationLanguageTrend": "api/ApiQueryContentTranslationLanguageTrend.php",
+		"ApiQueryContentTranslationStats": "api/ApiQueryContentTranslationStats.php",
+		"ApiQueryPublishedTranslations": "api/ApiQueryPublishedTranslations.php",
+		"ContentTranslationHooks": "ContentTranslation.hooks.php",
+		"ContentTranslation\\Database": "includes/Database.php",
+		"ContentTranslation\\Draft": "includes/Draft.php",
+		"ContentTranslation\\GlobalUser": "includes/GlobalUser.php",
+		"ContentTranslation\\Notification": "includes/Notification.php",
+		"ContentTranslation\\SiteMapper": "includes/SiteMapper.php",
+		"ContentTranslation\\Stats": "includes/Stats.php",
+		"ContentTranslation\\Translation": "includes/Translation.php",
+		"ContentTranslation\\Suggestion": "includes/Suggestion.php",
+		"ContentTranslation\\SuggestionList": "includes/SuggestionList.php",
+		"ContentTranslation\\SuggestionListManager": "includes/SuggestionListManager.php",
+		"ContentTranslation\\Translator": "includes/Translator.php",
+		"SpecialContentTranslation": "specials/SpecialContentTranslation.php",
+		"SpecialContentTranslationStats": "specials/SpecialContentTranslationStats.php"
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-web-cx": true
+	},
+	"config": {
+		"ContentTranslationExperimentalFeatures": false,
+		"ContentTranslationDomainCodeMapping": {
+			"be-tarask": "be-x-old",
+			"bho": "bh",
+			"crh-latn": "crh",
+			"gsw": "als",
+			"lzh": "zh-classical",
+			"nan": "zh-min-nan",
+			"nb": "no",
+			"rup": "roa-rup",
+			"sgs": "bat-smg",
+			"vro": "fiu-vro",
+			"yue": "zh-yue"
+		},
+		"ContentTranslationParsoid": {
+			"url": "http://parsoid-lb.eqiad.wikimedia.org/",
+			"timeout": 100000,
+			"prefix": "enwiki"
+		},
+		"ContentTranslationDatabase": null,
+		"ContentTranslationCluster": false,
+		"ContentTranslationEventLogging": false,
+		"ContentTranslationHighMTCategory": null,
+		"ContentTranslationSiteTemplates": {
+			"view": "//$1.wikipedia.org/wiki/$2",
+			"action": "//$1.wikipedia.org/w/index.php?title=$2",
+			"api": "//$1.wikipedia.org/w/api.php",
+			"cx": "http://localhost:8080/v1"
+		},
+		"@ContentTranslationTranslateInTarget": "Whether to open Special:ContentTranslation in the target wiki when clicking the button in the entry point. The domain will be based on $wgContentTranslationSiteTemplates. The default is to open Special:ContentTranslation on the same wiki",
+		"ContentTranslationTranslateInTarget": false,
+		"@ContentTranslationAsBetaFeature": "Whether to have CX available only as a beta feature and only shown to the  users who have enabled the beta feature.",
+		"ContentTranslationAsBetaFeature": true,
+		"ContentTranslationDefaultSourceLanguage": "en",
+		"@ContentTranslationTargetNamespace": "Target namespace to publish articles. Values can be 'Main' or any valid Namespace without leading column.",
+		"ContentTranslationTargetNamespace": "Main",
+		"ContentTranslationCampaigns": {
+			"cxstats": true,
+			"newarticle": true
+		},
+		"@ContentTranslationUseMagnusTool":"Whether the Magnus tool to find missing articles to be enabled or not. This is initially made to experiment with an article comparison tool at http://tools.wmflabs.org/not-in-the-other-language/ See https://phabricator.wikimedia.org/T76843",
+		"ContentTranslationUseMagnusTool": true,
+		"ContentTranslationBrowserBlacklist": {
+			"msie": [ [ "<", 10 ] ]
+		},
+		"ContentTranslationCXServerAuth": {
+			"algorithm": "HS256",
+			"key": "",
+			"age": "3600"
+		},
+		"ContentTranslationEnableSuggestions": false
+	},
+	"ResourceModules": {
+		"ext.cx.contributions": {
+			"scripts": [
+				"entrypoint/ext.cx.contributions.js"
+			],
+			"styles": [
+				"entrypoint/styles/ext.cx.contributions.less"
+			],
+			"dependencies": [
+				"mediawiki.ui.button",
+				"mediawiki.util"
+			],
+			"messages": [
+				"cx-contributions-new-contributions",
+				"cx-contributions-new-article",
+				"cx-contributions-translation",
+				"cx-contributions-upload",
+				"cx-contributions-new-article-tooltip",
+				"cx-contributions-translation-tooltip",
+				"cx-contributions-upload-tooltip"
+			]
+		},
+		"ext.cx.contributions.init": {
+			"scripts": [
+				"entrypoint/ext.cx.contributions.init.js"
+			],
+			"dependencies": [
+				"ext.cx.contributions"
+			],
+			"position": "top"
+		},
+		"ext.cx.model": {
+			"scripts": [
+				"base/ext.cx.model.js"
+			]
+		},
+		"ext.cx.feedback": {
+			"dependencies": [
+				"ext.cx.model"
+			],
+			"scripts": [
+				"widgets/feedback/ext.cx.feedback.js"
+			],
+			"styles": [
+				"widgets/feedback/styles/ext.cx.feedback.less"
+			],
+			"messages": [
+				"cx-feedback-link"
+			]
+		},
+		"ext.cx.translationview": {
+			"scripts": [
+				"translationview/ext.cx.translationview.js"
+			],
+			"styles": [
+				"translationview/styles/ext.cx.translationview.less"
+			],
+			"dependencies": [
+				"ext.cx.header",
+				"ext.cx.model",
+				"ext.cx.sitemapper",
+				"ext.cx.source"
+			]
+		},
+		"ext.cx.dashboard": {
+			"scripts": [
+				"dashboard/ext.cx.dashboard.js"
+			],
+			"styles": [
+				"dashboard/styles/ext.cx.dashboard.less"
+			],
+			"dependencies": [
+				"ext.cx.feedback",
+				"ext.cx.header",
+				"ext.cx.model",
+				"ext.cx.sitemapper",
+				"ext.cx.source.selector",
+				"ext.cx.translationlist",
+				"mediawiki.Uri",
+				"mediawiki.ui.button"
+			],
+			"messages": [
+				"cx-create-new-translation",
+				"cx-dashboard-sidebar-title",
+				"cx-dashboard-sidebar-information",
+				"cx-dashboard-sidebar-stats",
+				"cx-dashboard-sidebar-feedback",
+				"cx-create-new-translation",
+				"cx-translation-filter-suggested-translations",
+				"cx-translation-filter-published-translations",
+				"cx-translation-filter-draft-translations",
+				"cx-translation-filter-from-any-language",
+				"cx-translation-filter-to-any-language"
+			]
+		},
+		"ext.cx.magnuslink": {
+			"scripts": [
+				"dashboard/ext.cx.magnuslink.js"
+			],
+			"messages": [
+				"cx-magnus-tool-link-text"
+			]
+		},
+		"ext.cx.util": {
+			"scripts": [
+				"util/ext.cx.util.js"
+			],
+			"dependencies": [
+				"ext.cx.model"
+			]
+		},
+		"ext.cx.util.selection": {
+			"scripts": [
+				"util/ext.cx.util.selection.js"
+			]
+		},
+		"ext.cx.sitemapper": {
+			"scripts": [
+				"base/ext.cx.sitemapper.js"
+			],
+			"dependencies": [
+				"ext.cx.model",
+				"mediawiki.Uri",
+				"mediawiki.api",
+				"mediawiki.Title"
+			]
+		},
+		"ext.cx.header": {
+			"scripts": [
+				"header/ext.cx.header.js"
+			],
+			"styles": [
+				"header/styles/ext.cx.header.less"
+			],
+			"dependencies": [
+				"mediawiki.Uri",
+				"mediawiki.jqueryMsg",
+				"mediawiki.ui.button",
+				"mediawiki.util"
+			],
+			"messages": [
+				"cx",
+				"cx-error-server-connection",
+				"cx-error-page-not-found",
+				"cx-header-new-translation",
+				"cx-header-all-translations",
+				"cx-publish-button",
+				"cx-special-login-error",
+				"cx-translation-target-page-exists",
+				"login"
+			]
+		},
+		"ext.cx.source": {
+			"scripts": [
+				"source/ext.cx.source.js",
+				"source/ext.cx.source.filter.js"
+			],
+			"styles": [
+				"source/styles/ext.cx.source.less"
+			],
+			"dependencies": [
+				"ext.cx.util",
+				"ext.cx.widgets.spinner",
+				"jquery.uls.data",
+				"mediawiki.Title",
+				"mediawiki.Uri",
+				"mediawiki.api",
+				"mediawiki.jqueryMsg",
+				"mediawiki.util",
+				"mediawiki.skinning.content.parsoid"
+			],
+			"messages": [
+				"cx-source-view-page",
+				"cx-source-loading",
+				"cx-tools-link-hover-tooltip"
+			]
+		},
+		"ext.cx.source.selector": {
+			"scripts": [
+				"source/ext.cx.source.selector.js"
+			],
+			"styles": [
+				"source/styles/ext.cx.source.selector.less"
+			],
+			"dependencies": [
+				"ext.cx.sitemapper",
+				"ext.cx.pageselector",
+				"ext.cx.widgets.overlay",
+				"ext.uls.mediawiki",
+				"jquery.suggestions",
+				"jquery.throttle-debounce",
+				"jquery.uls.compact",
+				"mediawiki.ui.button"
+			],
+			"messages": [
+				"cx-sourceselector-dialog-new-translation",
+				"cx-sourceselector-dialog-button-start-translation",
+				"cx-sourceselector-dialog-button-cancel",
+				"cx-sourceselector-dialog-source-language-label",
+				"cx-sourceselector-dialog-target-language-label",
+				"cx-sourceselector-dialog-source-title-placeholder",
+				"cx-sourceselector-dialog-target-title-placeholder",
+				"cx-sourceselector-dialog-error-page-and-title-exist",
+				"cx-sourceselector-dialog-error-page-exists",
+				"cx-sourceselector-dialog-error-title-in-use",
+				"cx-sourceselector-dialog-error-no-source-article",
+				"cx-license-agreement",
+				"cx-error-server-connection"
+			]
+		},
+		"ext.cx.pageselector": {
+			"scripts": [
+				"widgets/pageselector/ext.cx.pageselector.js"
+			],
+			"styles": [
+				"widgets/pageselector/ext.cx.pageselector.less"
+			],
+			"messages": [
+				"mw-pageselector-missing"
+			],
+			"dependencies": [
+				"mediawiki.api"
+			]
+		},
+		"ext.cx.translation": {
+			"scripts": [
+				"translation/ext.cx.translation.js",
+				"translation/ext.cx.translation.aligner.js"
+			],
+			"dependencies": [
+				"ext.cx.editor",
+				"ext.cx.translation.progress",
+				"ext.cx.util",
+				"ext.cx.util.selection",
+				"jquery.throttle-debounce",
+				"jquery.uls.data",
+				"mediawiki.Uri",
+				"mediawiki.Title"
+			],
+			"styles": [
+				"translation/styles/ext.cx.translation.less"
+			],
+			"messages": [
+				"cx-translation-add-translation"
+			]
+		},
+		"ext.cx.translation.progress": {
+			"scripts": "translation/ext.cx.translation.progress.js",
+			"messages": [
+				"cx-warning-unsaved-translation"
+			],
+			"dependencies": [
+				"ext.cx.util"
+			]
+		},
+		"ext.cx.tools.manager": {
+			"scripts": [
+				"tools/ext.cx.tools.manager.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.manager.less"
+			]
+		},
+		"ext.cx.tools": {
+			"scripts": [
+				"tools/ext.cx.tools.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.less"
+			],
+			"dependencies": [
+				"ext.cx.feedback",
+				"ext.cx.progressbar",
+				"ext.cx.tools.categories",
+				"ext.cx.tools.dictionary",
+				"ext.cx.tools.formatter",
+				"ext.cx.tools.gallery",
+				"ext.cx.tools.poem",
+				"ext.cx.tools.images",
+				"ext.cx.tools.instructions",
+				"ext.cx.tools.link",
+				"ext.cx.tools.manager",
+				"ext.cx.tools.mt",
+				"ext.cx.tools.mtabuse",
+				"ext.cx.tools.reference",
+				"ext.cx.tools.template",
+				"ext.cx.util.selection",
+				"ext.cx.widgets.spinner",
+				"jquery.uls.data",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.cx.tools.card": {
+			"styles": [
+				"tools/styles/ext.cx.tools.card.less"
+			]
+		},
+		"ext.cx.tools.instructions": {
+			"scripts": [
+				"tools/ext.cx.tools.instructions.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.instructions.less"
+			],
+			"messages": [
+				"cx-tools-searchbox-text",
+				"cx-tools-instructions-text1",
+				"cx-tools-instructions-text2",
+				"cx-tools-instructions-text3",
+				"cx-tools-instructions-text4",
+				"cx-tools-instructions-text5",
+				"cx-tools-instructions-text6",
+				"cx-tools-view-guidelines",
+				"cx-tools-view-guidelines-link"
+			],
+			"dependencies": [
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.cx.tools.mtabuse": {
+			"scripts": [
+				"tools/ext.cx.tools.mtabuse.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.mtabuse.less"
+			],
+			"messages": [
+				"cx-mt-abuse-warning-title",
+				"cx-mt-abuse-warning-text",
+				"cx-tools-view-guidelines",
+				"cx-tools-view-guidelines-link"
+			],
+			"dependencies": [
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager"
+			]
+		},
+		"ext.cx.tools.formatter": {
+			"scripts": [
+				"tools/ext.cx.tools.formatter.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.formatter.less"
+			],
+			"dependencies": [
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager"
+			]
+		},
+		"ext.cx.tools.dictionary": {
+			"scripts": [
+				"tools/ext.cx.tools.dictionary.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.dictionary.less"
+			],
+			"messages": [
+				"cx-tools-dictionary-title"
+			],
+			"dependencies": [
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager"
+			]
+		},
+		"ext.cx.tools.link": {
+			"scripts": [
+				"tools/ext.cx.tools.link.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.link.less",
+				"tools/styles/ext.cx.tools.linker.less"
+			],
+			"messages": [
+				"cx-tools-link-title",
+				"cx-tools-link-add",
+				"cx-tools-link-remove",
+				"cx-tools-link-instruction-shortcut",
+				"cx-tools-missing-link-title",
+				"cx-tools-missing-link-text",
+				"cx-tools-missing-link-tooltip",
+				"cx-tools-missing-link-mark-link",
+				"cx-tools-link-internal-link",
+				"cx-tools-link-internal-link-placeholder",
+				"cx-tools-link-external-link",
+				"cx-tools-link-external-link-placeholder",
+				"cx-tools-link-to-another-page",
+				"cx-tools-link-apply"
+			],
+			"dependencies": [
+				"ext.cx.pageselector",
+				"ext.cx.tools.manager",
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager",
+				"jquery.uls.data",
+				"mediawiki.Title"
+			]
+		},
+		"ext.cx.tools.mt": {
+			"scripts": [
+				"tools/ext.cx.tools.mt.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.mt.less"
+			],
+			"messages": [
+				"cx-tools-mt-title",
+				"cx-tools-mt-use-source",
+				"cx-tools-mt-clear-translation",
+				"cx-tools-mt-restore",
+				"cx-tools-mt-provider-title",
+				"cx-tools-mt-not-available",
+				"cx-tools-mt-dont-use"
+			],
+			"dependencies": [
+				"ext.cx.model",
+				"ext.cx.source",
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager",
+				"ext.cx.translation",
+				"ext.cx.translationview",
+				"ext.cx.util"
+			]
+		},
+		"ext.cx.tools.reference": {
+			"scripts": [
+				"tools/ext.cx.tools.reference.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.reference.less"
+			],
+			"messages": [
+				"cx-tools-reference-title",
+				"cx-tools-reference-add",
+				"cx-tools-reference-remove"
+			],
+			"dependencies": [
+				"ext.cx.tools.card",
+				"ext.cx.tools.manager",
+				"ext.cx.util"
+			]
+		},
+		"ext.cx.tools.template": {
+			"scripts": [
+				"tools/ext.cx.tools.template.js"
+			]
+		},
+		"ext.cx.tools.images": {
+			"scripts": [
+				"tools/ext.cx.tools.images.js"
+			]
+		},
+		"ext.cx.tools.gallery": {
+			"scripts": [
+				"tools/ext.cx.tools.gallery.js"
+			]
+		},
+		"ext.cx.tools.poem": {
+			"scripts": [
+				"tools/ext.cx.tools.poem.js"
+			]
+		},
+		"ext.cx.tools.categories": {
+			"scripts": [
+				"tools/ext.cx.tools.categories.js"
+			],
+			"styles": [
+				"tools/styles/ext.cx.tools.categories.less"
+			],
+			"messages": [
+				"cx-tools-categories-count-message"
+			]
+		},
+		"ext.cx.progressbar": {
+			"scripts": "widgets/progressbar/ext.cx.progressbar.js",
+			"styles": [
+				"widgets/progressbar/ext.cx.progressbar.less"
+			],
+			"messages": [
+				"cx-header-progressbar-text",
+				"cx-header-progressbar-text-mt"
+			],
+			"dependencies": [
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.cx.draft": {
+			"scripts": [
+				"draft/ext.cx.draft.js"
+			],
+			"dependencies": [
+				"ext.cx.model",
+				"mediawiki.api.edit",
+				"jquery.throttle-debounce"
+			],
+			"messages": [
+				"cx-lost-session-draft",
+				"cx-save-draft-error",
+				"cx-save-draft-save-success",
+				"cx-save-draft-saving",
+				"cx-save-draft-tooltip"
+			]
+		},
+		"ext.cx.publish": {
+			"scripts": [
+				"publish/ext.cx.publish.js"
+			],
+			"styles": [
+				"publish/styles/ext.cx.publish.less"
+			],
+			"dependencies": [
+				"ext.cx.model",
+				"ext.cx.publish.dialog",
+				"ext.cx.sitemapper",
+				"ext.cx.tours.publish.init",
+				"json",
+				"mediawiki.api.edit"
+			],
+			"messages": [
+				"cx-lost-session-publish",
+				"cx-publish-button-publishing",
+				"cx-publish-captcha-title",
+				"cx-publish-page-error",
+				"cx-publish-page-success",
+				"unknown-error"
+			]
+		},
+		"ext.cx.wikibase.link": {
+			"scripts": [
+				"publish/ext.cx.wikibase.link.js"
+			],
+			"dependencies": [
+				"wikibase.api.RepoApi",
+				"wikibase.client.currentSite",
+				"wikibase.client.getMwApiForRepo",
+				"wikibase.client.PageConnector"
+			]
+		},
+		"ext.cx.publish.dialog": {
+			"scripts": [
+				"publish/ext.cx.publish.dialog.js"
+			],
+			"styles": [
+				"publish/styles/ext.cx.publish.dialog.less"
+			],
+			"dependencies": [
+				"ext.cx.model",
+				"ext.cx.sitemapper"
+			],
+			"messages": [
+				"cx-publishing-dialog-message",
+				"cx-publishing-dialog-keep-button",
+				"cx-publishing-dialog-publish-draft-button",
+				"cx-publishing-dialog-publish-anyway-button"
+			]
+		},
+		"ext.cx.tours.publish.init": {
+			"scripts": [
+				"tours/ext.cx.tours.publish.init.js"
+			],
+			"dependencies": [
+				"mediawiki.cookie"
+			]
+		},
+		"ext.cx.eventlogging": {
+			"scripts": "eventlogging/ext.cx.eventlogging.js",
+			"dependencies": [
+				"ext.cx.model"
+			]
+		},
+		"ext.cx.interlanguagelink": {
+			"scripts": "entrypoint/ext.cx.interlanguagelink.js",
+			"styles": "entrypoint/styles/ext.cx.interlanguagelink.less",
+			"messages": [
+				"cx-entrypoint-title"
+			],
+			"dependencies": [
+				"ext.cx.util",
+				"ext.uls.init",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.cx.entrypoint": {
+			"scripts": "entrypoint/ext.cx.entrypoint.js",
+			"styles": "entrypoint/styles/ext.cx.entrypoint.less",
+			"messages": [
+				"cx-entrypoint-dialog-page-doesnt-exist-yet",
+				"cx-entrypoint-dialog-title-in",
+				"cx-entrypoint-dialog-button-create-from-scratch",
+				"cx-entrypoint-dialog-button-translate-from",
+				"cx-license-agreement"
+			],
+			"dependencies": [
+				"ext.cx.sitemapper",
+				"ext.cx.widgets.callout",
+				"jquery.uls.data",
+				"mediawiki.Uri",
+				"mediawiki.jqueryMsg"
+			]
+		},
+		"ext.guidedTour.tour.cxpublish": {
+			"scripts": "tours/ext.cx.tours.publish.js",
+			"dependencies": [
+				"ext.guidedTour",
+				"json",
+				"mediawiki.cookie",
+				"mediawiki.Title"
+			],
+			"messages": [
+				"vector-action-move",
+				"vector-view-edit",
+				"cx-publish-gt-no-permission-to-move-title",
+				"cx-publish-gt-no-permission-to-move-description",
+				"cx-publish-gt-first-step-title",
+				"cx-publish-gt-first-step-description",
+				"cx-publish-gt-move-page-title",
+				"cx-publish-gt-move-page-description",
+				"cx-publish-gt-moved-title",
+				"cx-publish-gt-moved-description",
+				"cx-publish-gt-published-title",
+				"cx-publish-gt-published-description"
+			]
+		},
+		"ext.cx.translationlist": {
+			"scripts": [
+				"dashboard/ext.cx.translationlist.js"
+			],
+			"styles": [
+				"dashboard/styles/ext.cx.translationlist.less"
+			],
+			"dependencies": [
+				"ext.cx.progressbar",
+				"ext.cx.util",
+				"ext.cx.widgets.overlay",
+				"jquery.uls.data",
+				"moment"
+			],
+			"messages": [
+				"cx-dashboard-header",
+				"cx-discard-translation",
+				"cx-translation-status-draft",
+				"cx-translation-status-deleted",
+				"cx-translation-status-published",
+				"cx-draft-discard-confirmation-message",
+				"cx-draft-cancel-button-label",
+				"cx-draft-discard-button-label",
+				"cx-translationlist-empty-title",
+				"cx-translationlist-empty-desc"
+			]
+		},
+		"ext.cx.translation.conflict": {
+			"scripts": [
+				"translation/ext.cx.translation.conflict.js"
+			],
+			"styles": [
+				"translation/styles/ext.cx.translation.conflict.less"
+			],
+			"messages": [
+				"cx-translation-already-in-progress",
+				"cx-translation-already-in-progress-collaborate",
+				"cx-create-new-translation"
+			]
+		},
+		"ext.cx.editor": {
+			"scripts": [
+				"editor/ext.cx.editor.js"
+			],
+			"dependencies": [
+				"jquery.throttle-debounce"
+			]
+		},
+		"ext.cx.stats": {
+			"scripts": [
+				"stats/ext.cx.stats.js"
+			],
+			"styles": [
+				"stats/styles/ext.cx.stats.less"
+			],
+			"dependencies": [
+				"chart.js",
+				"ext.cx.header",
+				"ext.cx.sitemapper",
+				"ext.cx.util",
+				"ext.cx.widgets.callout",
+				"ext.cx.widgets.spinner",
+				"jquery.uls.data"
+			],
+			"messages": [
+				"cx-stats-published-translations-title",
+				"cx-stats-draft-translations-title",
+				"cx-stats-published-translators-title",
+				"cx-trend-all-translations",
+				"cx-trend-translations-to",
+				"cx-stats-try-contenttranslation",
+				"cx-stats-published-target-source",
+				"cx-stats-published-source-target",
+				"cx-stats-draft-target-source",
+				"cx-stats-draft-source-target",
+				"cx-stats-tabs-expand",
+				"cx-stats-total-published",
+				"cx-stats-monthly-published",
+				"cx-stats-weekly-published",
+				"cx-stats-local-published-number",
+				"cx-stats-local-published",
+				"cx-stats-grouping-title",
+				"percent"
+			]
+		},
+		"chart.js": {
+			"localBasePath": "lib",
+			"remoteExtPath": "ContentTranslation/lib",
+			"scripts": [
+				"chart.js/Chart.Core.js",
+				"chart.js/Chart.Line.js"
+			]
+		},
+		"ext.cx.beta.notification": {
+			"scripts": [
+				"entrypoint/ext.cx.betafeature.notification.js"
+			],
+			"dependencies": [
+				"jquery.tipsy"
+			],
+			"messages": [
+				"cx-beta-feature-enabled-notification"
+			]
+		},
+		"ext.cx.campaigns.newarticle": {
+			"scripts": [
+				"campaigns/ext.cx.campaigns.newarticle.js"
+			],
+			"styles": [
+				"campaigns/styles/ext.cx.campaigns.newarticle.less"
+			],
+			"dependencies": [
+				"ext.cx.widgets.callout",
+				"jquery.client",
+				"jquery.throttle-debounce",
+				"mediawiki.ui.button",
+				"mediawiki.util"
+			],
+			"messages": [
+				"cx-campaign-newarticle-notice",
+				"cx-campaign-no-thanks",
+				"cx-campaign-try"
+			]
+		},
+		"ext.cx.campaigns.newarticle.veloader": {
+			"scripts": [
+				"campaigns/ext.cx.campaigns.newarticle.veloader.js"
+			]
+		},
+		"ext.cx.betafeature.init": {
+			"scripts": [
+				"campaigns/ext.cx.betafeature.init.js"
+			]
+		},
+		"ext.cx.campaigns.contributionsmenu": {
+			"scripts": [
+				"campaigns/ext.cx.campaigns.contributionsmenu.js"
+			],
+			"styles": [
+				"campaigns/styles/ext.cx.campaigns.contributionsmenu.less"
+			],
+			"dependencies": [
+				"ext.cx.widgets.callout",
+				"jquery.client",
+				"mediawiki.ui.button",
+				"mediawiki.Uri",
+				"mediawiki.util"
+			],
+			"messages": [
+				"cx-campaign-contributionsmenu-mycontributions",
+				"cx-campaign-contributionsmenu-mytranslations",
+				"cx-campaign-contributionsmenu-translate-instead",
+				"cx-campaign-contributionsmenu-might-be-available",
+				"cx-campaign-contributionsmenu-myuploads",
+				"quotation-marks"
+			]
+		},
+		"ext.cx.widgets.overlay": {
+			"scripts": [
+				"widgets/overlay/ext.cx.overlay.js"
+			],
+			"styles": [
+				"widgets/overlay/ext.cx.overlay.less"
+			],
+			"dependencies": [
+				"ext.cx.model"
+			]
+		},
+		"ext.cx.widgets.spinner": {
+			"styles": [
+				"widgets/spinner/ext.cx.spinner.less"
+			]
+		},
+		"ext.cx.widgets.callout": {
+			"scripts": [
+				"widgets/callout/ext.cx.callout.js"
+			],
+			"styles": [
+				"widgets/callout/ext.cx.callout.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "ContentTranslation/modules"
+	},
+	"manifest_version": 1
+}

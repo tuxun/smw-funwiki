@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"whosonline": "Ko je na mreži",
+	"whosonline-desc": "Prikazuje [[Special:WhosOnline|spisak]] prijavljenih korisnika i anonomnih korisnika koji su trenutno na mreži"
+}

@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"mpdf-action": "Exportación en PDF",
+	"mpdf-desc": "Converte a páxina actual nun PDF e mándalla ao navegador"
+}

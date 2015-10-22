@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ilnur efende",
+			"Derslek",
+			"Ильнар"
+		]
+	},
+	"thanks-thank": "{{GENDER:$1|{{GENDER:$2|рәхмәт әйтү}}}}",
+	"thanks-thank-tooltip": "{{GENDER:$2|Кулланучыга}} рәхмәт хаты {{GENDER:$1|җибәрү}}",
+	"notification-thanks-flyout2": "$1 сезгә «$2» битендә ясаган кертемегез өчен рәхмәт әйтте.",
+	"notification-thanks-email-batch-body": "$1 сезгә «$2» битендә ясаган кертемегез өчен рәхмәт әйтте."
+}

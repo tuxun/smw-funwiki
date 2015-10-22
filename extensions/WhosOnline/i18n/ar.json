@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"whosonline": "من موجود",
+	"whosonline-desc": "يعرض [[Special:WhosOnline|قائمة]] للمستخدمين المسجلين والمجهولين الموجودين حاليا على الشبكة"
+}

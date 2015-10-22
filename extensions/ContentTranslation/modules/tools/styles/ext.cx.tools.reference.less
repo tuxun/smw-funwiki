@@ -1,0 +1,71 @@
+@import "../../widgets/common/ext.cx.common";
+@import "mediawiki.mixins";
+
+.card.reference {
+	.mw-ui-item;
+	animation-name: card-show-animation;
+	animation-duration: 0.5s;
+	position: relative;
+	padding: 0;
+}
+
+.card__add-reference {
+	@vertical-margin: 10px;
+	@horizontal-margin: 15px;
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	float: none;
+	padding: @vertical-margin @horizontal-margin;
+	font-size: large;
+	color: #565656; // TODO Should come from library?
+	.background-image-svg('../images/add.svg', '../images/add.png');
+	background-color: #FFF;
+	background-position: left 10px center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	padding: 5px 10px 5px 32px;
+	cursor: pointer;
+	clear: both;
+	border-top: 1px solid #dddddd;
+}
+
+.card__remove-reference {
+	@vertical-margin: 10px;
+	@horizontal-margin: 15px;
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	float: none;
+	padding: @vertical-margin @horizontal-margin;
+	font-size: large;
+	color: #565656; // TODO Should come from library?
+	.background-image-svg('../images/clear.svg', '../images/clear.png');
+	background-color: #FFF;
+	background-position: 10px center;
+	background-repeat: no-repeat;
+	background-size: 15px;
+	padding: 5px 10px 5px 32px;
+	cursor: pointer;
+	clear: both;
+	border-top: 1px solid #dddddd;
+}
+
+.card__reference-number {
+	.mw-ui-item;
+	.mw-ui-one-fifth;
+	background-color: #FFFFFF;
+	padding: 0;
+	text-align: center;
+	color: #565656;
+	font-size: large;
+}
+
+.card__reference-content {
+	.mw-ui-item;
+	.mw-ui-four-fifths;
+	color: #565656;
+	font-size: large;
+	padding: 4px;
+	padding-bottom: 15px;
+	word-wrap: break-word;
+}
+

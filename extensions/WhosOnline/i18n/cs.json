@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matěj Grabovský"
+		]
+	},
+	"whosonline": "Kdo je online",
+	"whosonline-desc": "Zobrazuje [[Special:WhosOnline|seznam]] přihlášených a anonymních uživatelů, kteří jsou momentálně online"
+}

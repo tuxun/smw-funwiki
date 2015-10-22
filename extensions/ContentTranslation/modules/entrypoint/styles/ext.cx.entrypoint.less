@@ -1,0 +1,71 @@
+@import "../../widgets/common/ext.cx.common";
+@import "mediawiki.mixins";
+
+.cx-entrypoint-dialog {
+	max-width: 600px;
+}
+
+.cx-entrypoint-dialog__heading {
+	@vertical-margin: 10px;
+	@horizontal-margin: 15px;
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: @vertical-margin @horizontal-margin;
+	font-size: large;
+	font-weight: bolder;
+	line-height: 1.5em;
+
+	.icon-close {
+		.background-image-svg('../images/close.svg', '../images/close.png');
+		background-position: center center;
+		background-repeat: no-repeat;
+		float: right;
+		padding: 15px;
+		cursor: pointer;
+		position: relative;
+		top: -@vertical-margin;
+		left: @horizontal-margin;
+	}
+}
+
+.cx-entrypoint-dialog__title-label {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: 10px 15px 5px 15px;
+	color: #333;
+}
+
+.cx-entrypoint-dialog__title-box-block {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: 5px 15px 20px 15px;
+
+	input {
+		.mw-ui-item;
+		.mw-ui-one-whole;
+		padding: 4px 8px;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+}
+
+.cx-entrypoint-dialog__actions {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: 15px 15px 15px 15px;
+	text-align: right;
+	background-color: #FBFBFB;
+	button {
+		margin-left: 10px;
+	}
+}
+
+.cx-entrypoint-dialog__license {
+	.mw-ui-item;
+	.mw-ui-one-whole;
+	padding: 15px 10px 5px 10px;
+	background-color: #FBFBFB;
+	font-size: 12px;
+	color: #777;
+	border-top: 1px solid #f5f5f5;
+}

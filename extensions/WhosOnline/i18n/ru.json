@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Александр Сигачёв"
+		]
+	},
+	"whosonline": "Сейчас на сайте",
+	"whosonline-desc": "Показывает [[Special:WhosOnline|кто из участников сейчас на сайте]]"
+}

@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby",
+			"Soued031"
+		]
+	},
+	"thanks-desc": "Setzt Linken derbäi fir Benotzer fir Ännerungen, Bemierkungen, asw. 'Merci' ze soen",
+	"thanks-thank": "{{GENDER:$1|{{GENDER:$2|Merci soen}}}}",
+	"thanks-thanked": "{{GENDER:$1|{{GENDER:$2|Merci gesot}}}}",
+	"thanks-button-thank": "{{GENDER:$1|{{GENDER:$2|Merci soen}}}}",
+	"thanks-button-thanked": "{{GENDER:$1|{{GENDER:$2|Merci gesot}}}}",
+	"thanks-error-undefined": "'Merci soen' huet net funktionéiert. Probéiert w.e.g. nach eng Kéier.",
+	"thanks-error-invalidrevision": "Versiounsnummer (ID) ass net valabel.",
+	"thanks-thank-tooltip": "{{GENDER:$2|Dësem Benotzer|Dëser Benotzerin}} ee \"Merci\" {{GENDER:$1|schécken}}",
+	"thanks-confirmation2": "Merci fir dës Ännerung ëffentlech {{GENDER:$1|schécken}}?",
+	"thanks": "Merci soen",
+	"thanks-submit": "Merci soen",
+	"echo-pref-subscription-edit-thank": "'Mercie' fir meng Ännerung",
+	"echo-pref-tooltip-edit-thank": "Mech Informéieren wann ee mir fir eng Ännerung déi ech gemaach hu Merci seet.",
+	"echo-category-title-edit-thank": "Merci",
+	"notification-thanks-diff-link": "Är Ännerung",
+	"notification-thanks": "[[User:$1|$1]] {{GENDER:$1|huet}} Iech Merci gesot fir $2 op [[:$3]].",
+	"notification-thanks-flyout2": "[[User:$1|$1]] {{GENDER:$1|huet}} Iech Merci gesot fir Är Ännerung op $2.",
+	"notification-thanks-email-subject": "$1 {{GENDER:$1|seet}} Iech merci fir Är Ännerung op {{SITENAME}}",
+	"notification-thanks-email-batch-body": "$1 {{GENDER:$1|seet}} Iech merci fir Är Ännerung op $2.",
+	"notification-link-text-respond-to-user": "Dem Benotzer äntwerten",
+	"log-name-thanks": "Logbuch vum Merci-soen",
+	"log-description-thanks": "Hei drënner ass eng Lëscht vu Benotzer déi anere Benotzer 'Merci' gesot hunn.",
+	"logentry-thanks-thank": "$1 {{GENDER:$2|huet dem}} {{GENDER:$4|$3}} Merci gesot",
+	"log-show-hide-thanks": "Logbuch vum 'Merci' $1",
+	"thanks-confirmation-special": "Wëllt Dir ëffentlech fir dës Ännerung e 'Merci' schécken?",
+	"notification-link-text-view-post": "Bemierkung weisen",
+	"flow-thanks-confirmation-special": "Wëllt Dir ëffentlech fir dës Bemierkung e 'Merci' schécken?",
+	"notification-flow-thanks-post-link": "Är Bemierkung",
+	"notification-flow-thanks-email-subject": "{{GENDER:$1|D'|De(n)}} $1 seet {{GENDER:$2|Iech}} Merci fir Är Bemierkung op {{SITENAME}}",
+	"notification-flow-thanks-email-batch-body": "{{GENDER:$1|D'|De(n)}} $1 seet {{GENDER:$4|Iech}} Merci fir Är Bemierkung iwwer \"$2\" betreffend $3."
+}

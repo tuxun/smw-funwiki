@@ -1,0 +1,29 @@
+{
+	/* Common */
+
+	// Enforcing
+	"bitwise": true,
+	"eqeqeq": true,
+	"freeze": true,
+	"latedef": true,
+	"noarg": true,
+	"nonew": true,
+	"undef": true,
+	"unused": true,
+	"strict": false,
+
+	// Relaxing
+	"es5": false,
+
+	// Environment
+	"browser": true,
+	"jquery": true,
+
+
+	/* Local */
+
+	"predef": [
+		"mediaWiki",
+		"jQuery"
+	]
+}

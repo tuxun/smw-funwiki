@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"YaronSh"
+		]
+	},
+	"whosonline": "מי מחובר",
+	"whosonline-desc": "הצגת [[Special:WhosOnline|רשימה]] של משתמשים רשומים ואנונימיים המקוונים כעת"
+}

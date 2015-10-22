@@ -1,0 +1,48 @@
+/*
+ * -----------------------------------------------------------------------------
+ * CSS definitions for the Nice Category List extension V2.2
+ * -----------------------------------------------------------------------------
+ */
+ 
+/*  block items */
+    div.ncl-block-bullet-2             { margin-left:  2em; }
+    div.ncl-block-bullet-3             { margin-left:  3em; }
+    div.ncl-block-bullet-4             { margin-left:  4em; }
+    div.ncl-block-bullet-5             { margin-left:  5em; }
+    div.ncl-block-bullet-6             { margin-left:  6em; }
+    div.ncl-block-bullet-7             { margin-left:  7em; }
+    div.ncl-block-bullet-8             { margin-left:  8em; }
+    div.ncl-block-bullet-9             { margin-left:  9em; }
+    div.ncl-block-bullet-10            { margin-left: 10em; }
+    div.ncl-block-bullet-11            { margin-left: 11em; }
+    div.ncl-block-bullet-12            { margin-left: 12em; }
+    div.ncl-block-bullet-13            { margin-left: 13em; }
+    div.ncl-block-bullet-14            { margin-left: 14em; }
+    div.ncl-block-bullet-15            { margin-left: 15em; }
+    div.ncl-block-bullet-16            { margin-left: 16em; }
+    div.ncl-block-bullet-17            { margin-left: 17em; }
+    div.ncl-block-bullet-18            { margin-left: 18em; }
+    div.ncl-block-bullet-19            { margin-left: 19em; }
+    div.ncl-block-bullet-20            { margin-left: 20em; }
+    div.ncl-block-bullet-21            { margin-left: 21em; }
+    div.ncl-block-bullet-22            { margin-left: 22em; }
+    div.ncl-block-bullet-23            { margin-left: 23em; }
+    div.ncl-block-bullet-24            { margin-left: 24em; }
+    div.ncl-block-bullet-25            { margin-left: 25em; }
+    div.ncl-block-bullet-26            { margin-left: 26em; }
+    div.ncl-block-bullet-27            { margin-left: 27em; }
+    div.ncl-block-bullet-28            { margin-left: 28em; }
+    div.ncl-block-bullet-29            { margin-left: 29em; }
+    div.ncl-block-bullet-30            { margin-left: 30em; }
+    div.ncl-block-bullet-31            { margin-left: 31em; }
+    div.ncl-block-bullet-32            { margin-left: 32em; }
+/*  heading block items */
+    div.ncl-heading                    { font-weight: bold; }
+       .ncl-heading-0                  { display: none;     }
+    div.ncl-heading-1                  { font-size: 16px; margin-left:-.5em; }
+/*  content block items */
+    div.ncl-content-compact            { margin-left: 3em;  }
+    div.ncl-content-compact-0          { margin-left: .5em; font-size: 16px; }
+/*  article level elements */
+    span.ncl-subcategory               { font-weight: bold; }
+

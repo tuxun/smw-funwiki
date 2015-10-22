@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"BrokenArrow"
+		]
+	},
+	"whosonline": "Chi è online",
+	"whosonline-desc": "Mostra [[Special:WhosOnline|un elenco]] di utenti attualmente online, anonimi compresi"
+}

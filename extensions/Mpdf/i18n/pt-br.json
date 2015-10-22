@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cainamarques"
+		]
+	},
+	"mpdf-action": "Exportar como PDF",
+	"mpdf-desc": "Converte página atual em PDF e envia ao navegador"
+}

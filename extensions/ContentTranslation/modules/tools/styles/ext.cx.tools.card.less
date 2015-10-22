@@ -1,0 +1,40 @@
+@import "../../widgets/common/ext.cx.common";
+
+.card {
+	background: #FFFFFF;
+	border: 1px solid #C9C9C9;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 #C9C9C9;
+	margin-top: 15px;
+
+	&:hover {
+		border-color: #BBBBBB;
+		box-shadow: 0 1px 0 #BBBBBB;
+	}
+}
+
+.card__title,
+.card__title--language {
+	.mw-ui-item;
+	.mw-ui-one-half;
+	color: #aaaaaa;
+	padding: 4px;
+}
+
+.card__title--language {
+	text-align: right;
+}
+
+/* Cards animation */
+@keyframes card-show-animation {
+	0% {
+		opacity: 0;
+		position: relative;
+		top: 15px;
+	}
+
+	100% {
+		opacity: 1;
+		top: 0px;
+	}
+}

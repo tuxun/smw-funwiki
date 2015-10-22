@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Grondin",
+			"PieRRoMaN"
+		]
+	},
+	"whosonline": "Qui est en ligne",
+	"whosonline-desc": "Affiche [[Special:WhosOnline|une liste]] des utilisateurs connectés ou anonymes actuellement en ligne"
+}

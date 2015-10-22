@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sp5uhe"
+		]
+	},
+	"whosonline": "Kto online",
+	"whosonline-desc": "Wyświetla [[Special:WhosOnline|listę]] zalogowanych i anonimowych użytkowników będących online"
+}

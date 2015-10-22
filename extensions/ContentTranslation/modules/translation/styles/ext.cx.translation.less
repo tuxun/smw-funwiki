@@ -1,0 +1,36 @@
+@import "../../widgets/common/ext.cx.common";
+@import "../../widgets/common/ext.cx.highlight";
+
+.cx-column--translation {
+	[contenteditable] {
+		outline: none;
+	}
+
+	[data-editable=false] {
+		 background-image: repeating-linear-gradient(135deg,#eee,#eee 5px,#ddd 5px,#ddd 10px);
+	}
+}
+
+.placeholder {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: lighter;
+	color: transparent;
+	cursor: pointer;
+	.cx-spinner {
+		margin: 0 auto;
+	}
+	.cx-column--translation:hover &:first-child {
+		color: transparent;
+		background: transparent;
+	}
+
+	&:first-child,
+	.cx-column--translation &:first-child:hover,
+	&:hover {
+		color: #AAA;
+		background: #f8f8f8;
+		line-height: 2em;
+	}
+}

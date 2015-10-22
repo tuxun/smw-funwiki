@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"mpdf-action": "Esportassion ëd PDF",
+	"mpdf-desc": "A convert la pàgina corenta an PDF e a la manda al navigador"
+}

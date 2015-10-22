@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Subi"
+		]
+	},
+	"chat-a-minute-ago": "duela minutu bat",
+	"chat-today": "gaur",
+	"chat-yesterday": "atzo",
+	"chat-message-from": "$1{{GENDER:$2|(r)en}} mezua"
+}

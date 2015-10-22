@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"mpdf-action": "PDF-извоз",
+	"mpdf-desc": "Ја претвора тековната страница во PDF и му ја испраќа на прелистувачот"
+}

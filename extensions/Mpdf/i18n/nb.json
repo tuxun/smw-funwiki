@@ -1,0 +1,5 @@
+{
+	"@metadata": [],
+	"mpdf-action": "PDF-eksport",
+	"mpdf-desc": "Konverterer nåværende side til PDF og sender den til nettleseren"
+}

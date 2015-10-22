@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="vendor/sigma/css/bootstrap.min.css">
+        <style>
+              body, html {
+                padding-top: 0;
+                padding-bottom: 0;
+				height: 100%;
+            }
+			canvas{
+				left : 0;
+			}
+        </style>
+        <link rel="stylesheet" href="vendor/sigma/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="vendor/sigma/css/main.css">
+
+        <script src="vendor/sigma/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="graph" style="width: 100%;height: 100%;"></div>
+	  
+	  
+	  </div>
+	 <div class="container col-xs-2" id="infos_selection" style="background-color: rgba(217,237,247,0.8);position: fixed;top:10px;right:10px;">
+	 
+	 </div>
+<div class="container col-xs-2" style="background-color: rgba(252,248,227,0.8);position: fixed;top:10px;left:10px;">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+		
+		<nav class="row">
+		
+				<div class="col-sm-12 ">
+				Afficher les types de noeud :<br/>
+				<label style="color:#5cb85c;"><input class="node-type-check" type="checkbox" id="node-type-Organization" name="node-type-Organization" value="Organization" checkedb="checked" checked="checked"> Organisations</label><br/>
+				<label style="color:#337ab7;"><input class="node-type-check" type="checkbox" id="node-type-Person" name="node-type-Person" value="Person" checkedb="checked" checked="checked"> Personnes</label><br/>
+				
+				<label style="color:#FF66FF;"><input class="node-type-check" type="checkbox" id="node-type-Cat-C3-A9gorie-3AProjet" name="node-type-Cat-C3-A9gorie-3AProjet" value="Cat-C3-A9gorie-3AProjet" checkedb="checked" checked="checked"> Projets</label><br/>
+				
+				<label style="color:#333333;"><input class="node-type-check" type="checkbox" id="node-type-Place" name="node-type-Place" value="Place" checkedb="checked" checked="checked"> Place</label><br/>
+				
+				<label style="color:#d9534f;"><input class="node-type-check" type="checkbox" id="node-type-non-declare" name="node-type-non-declare" value="non-declare" checkedb="checked" checked="checked"> Non enregistrés</label>
+				
+				<hr/>
+				</div>
+				<div class="col-sm-12 " id="form_types_liens">
+				Afficher les types de liens :<br/>
+				
+				
+				</div>
+				<div class="col-sm-12 ">
+				<label>Nombre de membre min :  <span id="nb_mem_min_span"></span><input class="filter_nb_members" type="range" id="nb_mem_min" value="0" max="100" min="0" step="2"></label>
+				<label>Nombre de membre max :  <span id="nb_mem_max_span"></span><input class="filter_nb_members" type="range" id="nb_mem_max" value="100" max="100" min="0" step="2"></label>
+				<hr/>
+				</div>
+				<div class="col-sm-12 ">
+				<label>Est membre de min : <span id="nb_is_mem_min_span"></span><input class="filter_nb_members" type="range" id="nb_is_mem_min" value="0" max="20" min="0" step="1"></label><br/>
+				<label>Est membre de max :  <span id="nb_is_mem_max_span"></span><input class="filter_nb_members" type="range" id="nb_is_mem_max" value="20" max="20" min="0" step="1"></label>
+				<hr/>
+				</div>
+			
+			
+		
+		</nav>  </div>
+
+    
+	  
+	 
+     
+
+
+
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="vendor/sigma/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="vendor/sigma/vendor/bootstrap.min.js"></script>
+		<script src="vendor/sigma/sigma.min.js"></script>
+		<script src="vendor/sigma/plugins/sigma.parsers.json.min.js"></script>
+		<script src="vendor/sigma/plugins/sigma.plugins.dragNodes.min.js"></script>
+		<script src="vendor/sigma/plugins/sigma.plugins.filter.min.js"></script>
+		<script src="vendor/sigma/plugins/sigma.renderers.customShapes.min.js"></script>
+		<script src="vendor/sigma/plugins/sigma.event.js"></script>
+		<script src="vendor/sigma/plugins/sigma.layout.forceAtlas2.min.js"></script>
+        <script src="vendor/sigma/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+	-->
+    </body>
+</html>
+

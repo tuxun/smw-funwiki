@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"SPQRobin",
+			"Siebrand"
+		]
+	},
+	"skinpernamespace-desc": "Maakt een vormgeving per naamruimte mogelijk"
+}

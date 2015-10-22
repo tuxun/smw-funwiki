@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"KuboF"
+		]
+	},
+	"apihelp-query+betafeatures-description": "Listo de ĉiuj BetaFunkcioj",
+	"apihelp-query+betafeatures-example-1": "Ricevi liston de ĉiuj disponeblaj betaj funkcioj kaj informoj pri kiom multaj uzantoj ilin ŝaltis",
+	"apihelp-query+betafeatures-param-counts": "Ĉu ŝuti ankaŭ nombron de uzantoj, kiuj ŝaltis certan preferon.",
+	"betafeatures-auto-enroll": "Aŭtomate ŝalti ĉiujn novajn betaj funkciojn",
+	"betafeatures-desc": "Ebligas al uzantoj ŝalti aŭ malŝalti funkciojn en tiu ĉi vikio, kiuj ankoraŭ ne estas tute pretaj por vera uzado.",
+	"betafeatures-extension-type": "Betaj funkcioj",
+	"betafeatures-section-desc": "Jen estas {{PLURAL:$1|nova funkcio|kelkaj novaj funkcioj}} kiujn ni prikonsideras por {{SITENAME}}. Bonvolu provi {{PLURAL:$1|ĝin|ilin}} kaj komentu ilin al ni por, ke ni povus plibonigi {{PLURAL:$1|ĝin|ilin}} laŭ viaj rimarkoj.",
+	"betafeatures-tooltip": "Bonvenon al beta-funkcioj! Tiu ĉi nova sekcio en agordoj ebligas al vi testi kaj doni prijuĝajn rimarkojn pri novaj funkcioj antaŭ ol ili estos ŝaltitaj kiel defaŭltaj. Ekprovu ion novan!",
+	"betafeatures-toplink": "Beta",
+	"mw-ui-feature-discuss": "diskuto",
+	"mw-ui-feature-info": "informo",
+	"mw-ui-feature-requirements-betafeatures": "Tiu ĉi funkcio postulas ŝaltitaj {{PLURAL:$1|jenan funkcion|jenajn funkciojn}}:",
+	"mw-ui-feature-requirements-browser": "{{PLURAL:$1|Jena foliumilo|Jenaj foliumiloj}} ne estas {{PLURAL:$1|subtenata|subtenataj}}:",
+	"mw-ui-feature-requirements-javascript": "Tiu ĉi funkcio postulas Ĝavoskripton.",
+	"mw-ui-feature-requirements-skins": "Tiu ĉi funkcio funkcias nur en {{PLURAL:$1|jena etoso|jenaj etosoj}}:",
+	"mw-ui-feature-user-count": "{{PLURAL:$1|Unu uzanto|$1 uzantoj|0=Neniu uzanto}} provas tiun ĉi funkcion.",
+	"prefs-betafeatures": "Betaj funkcioj",
+	"tooltip-pt-betafeatures": "Betaj funkcioj"
+}

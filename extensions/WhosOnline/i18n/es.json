@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crazymadlover",
+			"Sanbec",
+			"Macofe"
+		]
+	},
+	"whosonline": "Quién está en línea",
+	"whosonline-desc": "Muestra [[Special:WhosOnline|una lista]] de usuarios identificados y anónimos que están conectados actualmente."
+}

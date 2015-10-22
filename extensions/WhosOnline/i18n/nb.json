@@ -1,0 +1,7 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"whosonline": "Hvem er logget på",
+	"whosonline-desc": "Viser [[Special:WhosOnline|en liste]] over innloggede og anonyme brukere som er koblet til"
+}

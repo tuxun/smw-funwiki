@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gleki"
+		]
+	},
+	"log-name-flow": "flecu fasnu citri",
+	"flow-post-actions": "loi se zukte",
+	"flow-topic-actions": "loi se zukte",
+	"flow-newtopic-save": "jmina la'e se casnu",
+	"flow-post-action-delete-post": "daspo",
+	"flow-post-action-hide-post": "cancygau",
+	"flow-post-action-edit-post": "stika lo se mrilu",
+	"echo-category-title-flow-discussion": "lo flecu",
+	"flow-link-topic": "lo se casnu",
+	"flow-link-history": "lo citri"
+}

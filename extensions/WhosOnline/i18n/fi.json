@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Crt",
+			"Jack Phoenix"
+		]
+	},
+	"whosonline": "Paikalla olevat käyttäjät",
+	"whosonline-desc": "Näyttää [[Special:WhosOnline|luettelon]] sisäänkirjautuneista ja anonyymeistä käyttäjistä, jotka ovat paikalla."
+}

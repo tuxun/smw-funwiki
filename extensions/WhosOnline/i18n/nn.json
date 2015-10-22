@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Harald Khan",
+			"Njardarlogar"
+		]
+	},
+	"whosonline": "Kven er pålogga",
+	"whosonline-desc": "Viser [[Special:WhosOnline|ei lista]] over registrerte og anonyme brukarar som er tilkopla"
+}

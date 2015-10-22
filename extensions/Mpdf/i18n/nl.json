@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"mpdf-action": "Pdfexport",
+	"mpdf-desc": "Converteert de huidige pagina naar pdf en verzendt die naar de browser"
+}

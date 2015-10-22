@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"AdiJapan",
+			"KlaudiuMihaila",
+			"Stelistcristi"
+		]
+	},
+	"syntaxhighlight-desc": "Produce evidențierea sintaxei prin baliza <code>&lt;syntaxhighlight&gt;</code> folosind [http://pygments.org/ GeSHi - Generic Syntax Highlighter]"
+}

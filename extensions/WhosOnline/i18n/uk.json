@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"whosonline": "Хто онлайн",
+	"whosonline-desc": "Показує [[Special:WhosOnline|список]] залогованих користувачів та анонімів онлайн"
+}

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64"
+		]
+	},
+	"mpdf-action": "PDF-Export",
+	"mpdf-desc": "Ermöglicht die Ausgabe einer Seite als PDF-Datei"
+}

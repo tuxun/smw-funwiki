@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Michaello"
+		]
+	},
+	"whosonline": "Ko je prisutan",
+	"whosonline-desc": "Prikazuje [[Special:WhosOnline|spisak]] ulogovanih i anonimnih korisnika, koji su trenutno prisutni"
+}

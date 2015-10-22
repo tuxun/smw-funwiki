@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siebrand"
+		]
+	},
+	"whosonline": "Wie is er online",
+	"whosonline-desc": "[[Special:WhosOnline|Een lijst]] van actieve aangemelde en anonieme gebruikers"
+}

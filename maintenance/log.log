@@ -1,0 +1,53 @@
+[08-Aug-2015 21:53:28 Europe/Berlin] PHP Notice:  Undefined index: HTTP_HOST in /var/www/wiki/core/LocalSettings.php on line 313
+[08-Aug-2015 21:53:28 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URI in /var/www/wiki/core/LocalSettings.php on line 313
+[08-Aug-2015 21:53:28 Europe/Berlin] PHP Fatal error:  Interface 'SMW\QueryResultPrinter' not found in /var/www/wiki/core/extensions/SemanticMediaWiki/includes/queryprinters/ResultPrinter.php on line 38
+[08-Aug-2015 21:53:28 Europe/Berlin] 1
+[08-Aug-2015 21:53:28 Europe/Berlin] Interface 'SMW\QueryResultPrinter' not found
+[08-Aug-2015 21:53:28 Europe/Berlin] /var/www/wiki/core/extensions/SemanticMediaWiki/includes/queryprinters/ResultPrinter.php
+[08-Aug-2015 21:53:28 Europe/Berlin] 38
+[08-Aug-2015 22:23:32 Europe/Berlin] PHP Notice:  Undefined index: HTTP_HOST in /var/www/wiki/core/LocalSettings.php on line 314
+[08-Aug-2015 22:23:32 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URI in /var/www/wiki/core/LocalSettings.php on line 314
+[08-Aug-2015 22:23:32 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URI in /var/www/wiki/core/LocalSettings.php on line 529
+[08-Aug-2015 22:23:32 Europe/Berlin] PHP Notice:  Undefined index: REQUEST_URI in /var/www/wiki/core/LocalSettings.php on line 531
+[08-Aug-2015 22:24:18 Europe/Berlin] 8
+[08-Aug-2015 22:24:18 Europe/Berlin] Undefined index: REQUEST_URI
+[08-Aug-2015 22:24:18 Europe/Berlin] /var/www/wiki/core/LocalSettings.php
+[08-Aug-2015 22:24:18 Europe/Berlin] 531
+[12-Aug-2015 03:05:18 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 531
+[12-Aug-2015 03:05:18 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 533
+[12-Aug-2015 03:05:31 Europe/Paris] 8
+[12-Aug-2015 03:05:31 Europe/Paris] Undefined index: REQUEST_URI
+[12-Aug-2015 03:05:33 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/LocalSettings.php
+[12-Aug-2015 03:05:33 Europe/Paris] 533
+[12-Aug-2015 03:13:10 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 531
+[12-Aug-2015 03:13:10 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 533
+[12-Aug-2015 03:13:17 Europe/Paris] 8
+[12-Aug-2015 03:13:17 Europe/Paris] Undefined index: REQUEST_URI
+[12-Aug-2015 03:13:17 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/LocalSettings.php
+[12-Aug-2015 03:13:17 Europe/Paris] 533
+[12-Aug-2015 03:21:59 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 531
+[12-Aug-2015 03:21:59 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 533
+[12-Aug-2015 03:22:05 Europe/Paris] 8
+[12-Aug-2015 03:22:05 Europe/Paris] Undefined index: REQUEST_URI
+[12-Aug-2015 03:22:05 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/LocalSettings.php
+[12-Aug-2015 03:22:05 Europe/Paris] 533
+[15-Aug-2015 20:26:08 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 586
+[15-Aug-2015 20:26:08 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 588
+[15-Aug-2015 20:26:20 Europe/Paris] 8
+[15-Aug-2015 20:26:20 Europe/Paris] Undefined index: REQUEST_URI
+[15-Aug-2015 20:26:21 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/LocalSettings.php
+[15-Aug-2015 20:26:21 Europe/Paris] 588
+[22-Aug-2015 00:29:18 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 586
+[22-Aug-2015 00:29:18 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 588
+[22-Aug-2015 00:29:37 Europe/Paris] 8
+[22-Aug-2015 00:29:37 Europe/Paris] Undefined index: REQUEST_URI
+[22-Aug-2015 00:29:40 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/LocalSettings.php
+[22-Aug-2015 00:29:40 Europe/Paris] 588
+[14-Oct-2015 21:28:16 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 586
+[14-Oct-2015 21:28:16 Europe/Paris] PHP Notice:  Undefined index: REQUEST_URI in /home/didier3d/public_html/funlab.fr/core/LocalSettings.php on line 588
+[14-Oct-2015 21:28:29 Europe/Paris] PHP Warning:  require_once(/home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/../../../includes/utils/BatchRowWriter.php): failed to open stream: No such file or directory in /home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/FlowFixLinks.php on line 13
+[14-Oct-2015 21:28:29 Europe/Paris] PHP Fatal error:  require_once(): Failed opening required '/home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/../../../includes/utils/BatchRowWriter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/FlowFixLinks.php on line 13
+[14-Oct-2015 21:28:29 Europe/Paris] 64
+[14-Oct-2015 21:28:33 Europe/Paris] require_once(): Failed opening required '/home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/../../../includes/utils/BatchRowWriter.php' (include_path='.:/usr/lib/php:/usr/local/lib/php')
+[14-Oct-2015 21:28:33 Europe/Paris] /home/didier3d/public_html/funlab.fr/core/extensions/Flow/maintenance/FlowFixLinks.php
+[14-Oct-2015 21:28:33 Europe/Paris] 13

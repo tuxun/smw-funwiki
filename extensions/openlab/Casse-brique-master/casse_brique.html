@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<script type="text/javascript" src="casse_brique.js"></script>
+	<script type="text/javascript" src="tableaux.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		body {
+			background-color: #c6c6c6;
+			text-align:center;
+			padding-top:120px;
+		}
+		body>div {
+			position: relative;
+		}
+		canvas {
+			background-color: #e6e6e6;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+		}
+		.jouer {
+			position: relative;
+			top: 270px;
+			font-size:30px;
+			width:70px;
+			margin:auto;
+			font-family:Myriad Pro;
+		}
+		.jouer:hover {
+			cursor:pointer;
+		}
+	</style>
+	<div>
+		<p style="visibility:visible;" class="jouer">Jouer</p>
+		<canvas width="400" height="330">
+			Ce jeu n'est pas compatible sur votre navigateur.
+		</canvas>
+		<p class="vies">Il vous reste <span>3 vies</span></p>
+	</div>
+</body>
+</html>

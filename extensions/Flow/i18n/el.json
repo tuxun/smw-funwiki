@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Astralnet",
+			"Evropi",
+			"Geraki",
+			"Nikosguard"
+		]
+	},
+	"flow-post-moderated-toggle-delete-show": "Εμφάνιση σχολίου {{GENDER:$1|διαγραφή}} $2",
+	"flow-topic-actions": "Ενέργειες",
+	"flow-preview": "Προεπισκόπηση",
+	"flow-newtopic-content-placeholder": "Δημοσιεύστε ένα νέο μήνυμα στην \"$1\"",
+	"flow-newtopic-first-heading": "Ξεκινήσετε ένα νέο θέμα στην $1",
+	"flow-post-action-post-history": "Ιστορικό",
+	"flow-post-action-edit-post": "Επεξεργασία",
+	"flow-topic-notification-subscribe-title": "Αυτό το θέμα έχει προστεθεί στη λίστα παρακολούθησής {{GENDER:$1|σας}}.",
+	"flow-topic-notification-subscribe-description": "Θα {{GENDER:$1|λαμβάνετε}} ειδοποιήσεις για όλες τις δραστηριότητες σχετικά με αυτό το θέμα.",
+	"flow-board-notification-subscribe-title": "Είστε {{GENDER:$1|εγγεγραμμένος|εγγεγραμμένη}} σε αυτό τον πίνακα συζητήσεων!",
+	"flow-board-notification-subscribe-description": "{{GENDER:$1|Θα}} λάβετε μια ειδοποίηση όταν υπάρχει ένα νέο θέμα που έχει δημιουργηθεί σε αυτόν τον πίνακα.",
+	"flow-history-last4": "Τελευταίες 4 ώρες",
+	"flow-history-day": "Σήμερα",
+	"flow-notification-reply": "<span class=\"plainlinks mw-echo-title-heading\">[$5 $2]</span><br />{{GENDER:$1|Ο|Η}} $1 απάντησε στην '''$4'''.",
+	"flow-notification-reply-bundle": "<span class=\"plainlinks mw-echo-title-heading\">[$4 $2]</span><br />{{GENDER:$1|Ο|Η}} $1 και $5 {{PLURAL:$6|άλλος|άλλοι}} απάντησαν στην '''$3'''."
+}

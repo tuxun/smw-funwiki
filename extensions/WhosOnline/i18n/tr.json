@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph",
+			"Karduelis"
+		]
+	},
+	"whosonline": "Kimler çevrimiçi",
+	"whosonline-desc": "Şuanda çevrimiçi olan anonim ve giriş yapmış kullanıcıların [[Special:WhosOnline|bir listesini]] görüntüler"
+}

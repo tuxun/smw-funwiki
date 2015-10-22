@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"mpdf-action": "Esportación a PDF",
+	"mpdf-desc": "Convierte la páxina actual a PDF y la unvia al navegador"
+}

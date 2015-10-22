@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"BeginaFelicysym"
+		]
+	},
+	"mpdf-action": "Eksport do Pdf",
+	"mpdf-desc": "Zamienia bieżącą stronę na PDF i przesyła do przeglądarki"
+}

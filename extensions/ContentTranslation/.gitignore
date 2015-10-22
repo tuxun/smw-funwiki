@@ -1,0 +1,10 @@
+.svn
+*~
+*.kate-swp
+.*.swp
+.idea
+.bundle/
+docs/
+composer.lock
+vendor/
+node_modules/

@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mdupont",
+			"MicroBoy"
+		]
+	},
+	"whosonline": "Kush o në linjë",
+	"whosonline-desc": "Shfaq [[Special:WhosOnline|një listë]] për e regjistruar dhe përdoruesit anonim aktualisht online"
+}
